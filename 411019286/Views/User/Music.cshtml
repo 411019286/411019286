@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewBag.Title = "Music";
+}
+
+<h2>音符查詢</h2>
+@using (Html.BeginForm("Music", "User", FormMethod.Get))
+{
+    <p>姓名:@Html.TextBox("name")</p>
+    <p>數字:@Html.TextBox("music")</p>
+    <p>Hi,@ViewBag.Name, 查詢音符為:@ViewBag.Music</p>
+
+    <input type="submit" value="送出"/>
+}
+
